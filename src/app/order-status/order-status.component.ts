@@ -1,3 +1,11 @@
+/**
+ * Title: order-status.component.ts
+ * Author: Professor Krasso
+ * Date: 4 September 2020
+ * Modified By: Diandra McKenzie
+ * Description: Order-Status Component file
+ */
+
 import { Component, OnInit } from '@angular/core';
 
 @Component({

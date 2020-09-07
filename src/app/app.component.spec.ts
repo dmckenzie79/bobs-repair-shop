@@ -1,3 +1,11 @@
+/**
+ * Title: app.component.spec.ts
+ * Author: Professor Krasso
+ * Date: 4 August 2020
+ * Modified By: Diandra McKenzie
+ * Description: App component spec
+ */
+
 import { TestBed, async } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
@@ -20,16 +28,17 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'bobs-repair-shop'`, () => {
+  /**it(`should have as title 'in-n-out-booksp1'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('bobs-repair-shop');
+    expect(app.title).toEqual('in-n-out-booksp1');
   });
+  */
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('bobs-repair-shop app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('in-n-out-booksp1 app is running!');
   });
 });

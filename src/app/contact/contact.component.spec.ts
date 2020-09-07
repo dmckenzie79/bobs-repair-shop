@@ -1,3 +1,11 @@
+/**
+ * Title: contact.component.spec.ts
+ * Author: Professor Krasso
+ * Date: 4 August 2020
+ * Modified By: Diandra McKenzie
+ * Description: Contact component spec
+ */
+
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ContactComponent } from './contact.component';

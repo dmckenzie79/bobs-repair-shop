@@ -1,4 +1,12 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+/**
+ * Title: home.component.spec.ts
+ * Author: Professor Krasso
+ * Date: 4 September 2020
+ * Modified By: Diandra McKenzie
+ * Description: Home Component spec file
+ */
+
+ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { HomeComponent } from './home.component';
 

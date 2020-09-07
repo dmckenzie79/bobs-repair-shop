@@ -1,3 +1,11 @@
+/**
+ * Title: app.component.ts
+ * Author: Professor Krasso
+ * Date: 4 August 2020
+ * Modified By: Diandra McKenzie
+ * Description: App component
+ */
+
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,5 +14,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'bobs-repair-shop';
+  assignment: string;
+
+  constructor() {
+    this.assignment = "Bob\'s Repair Shop";
+  }
 }

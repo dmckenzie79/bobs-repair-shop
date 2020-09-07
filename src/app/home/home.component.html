@@ -1,1 +1,68 @@
-<p>home works!</p>
+    <h2 class="heading">Services</h2>
+
+      <form [formGroup]="serviceRepairForm"
+            fxLayout="column"
+            fxLayoutGap="15px">
+        <div
+
+        fxLayout="column">
+
+            <mat-checkbox class="checkbox" name="{{ services.id }}" *ngFor="let services of serviceRepairOptions" [value]="services">
+              {{ services.title }} {{ services.price | currency }}
+            </mat-checkbox>
+        </div>
+
+        <br />
+
+        <div>
+          <mat-divider></mat-divider>
+        </div>
+
+<h2 class="heading">Standard Fees</h2>
+
+        <div fxLayout="column" class="input">
+
+            <mat-label class="input" style="font-size: 20px;">Parts:
+            <input
+            type="number"
+            name="txtParts"
+            id="txtParts"
+            matInput formControlName="parts"
+            placeholder="Enter Value ..."
+            style="font-size: 20px; width:20vw"
+            required />
+          </mat-label>
+
+
+            <mat-label class="input" style="font-size: 20px;">Labor:
+            <input
+            type="number"
+            name="txtLabor"
+            id="txtLabor"
+            required id="txtLabor"
+            matInput formControlName="labor"
+            placeholder="Hours of Labor @ $50.00.."
+            style="font-size: 20px; width:20vw"
+            required />
+          </mat-label>
+
+        </div>
+
+      </form>
+
+          <br />
+
+          <div>
+            <mat-divider></mat-divider>
+          </div>
+
+          <br />
+
+  <mat-card-actions align="end">
+    <button mat-raised-button (ngSubmit)="submit(serviceRepairForm.value)" (click)="openDialog()">Calculate</button>
+  </mat-card-actions>
+
+
+
+
+
