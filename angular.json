@@ -123,8 +123,13 @@
               "devServerTarget": "bobs-repair-shop:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
-    }},
+    }
+  },
   "defaultProject": "bobs-repair-shop"
 }
