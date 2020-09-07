@@ -1,0 +1,33 @@
+/**
+ * Title: dialog-invoice.component.spec.ts
+ * Author: Professor Krasso
+ * Date: 4 September 2020
+ * Modified By: Diandra McKenzie
+ * Description: Dialog-Invoice Component spec file
+ */
+
+import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+
+import { DialogInvoiceComponent } from './dialog-invoice.component';
+
+describe('DialogInvoiceComponent', () => {
+  let component: DialogInvoiceComponent;
+  let fixture: ComponentFixture<DialogInvoiceComponent>;
+
+  beforeEach(async(() => {
+    TestBed.configureTestingModule({
+      declarations: [ DialogInvoiceComponent ]
+    })
+    .compileComponents();
+  }));
+
+  beforeEach(() => {
+    fixture = TestBed.createComponent(DialogInvoiceComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});
